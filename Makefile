@@ -5,8 +5,6 @@ run:
 
 format:
 	black app
-	black tests
 
 lint:
 	ruff check app
-	ruff check tests

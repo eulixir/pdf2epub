@@ -3,3 +3,5 @@ uvicorn
 pdfminer.six
 ebooklib
 python-multipart
+ruff
+black

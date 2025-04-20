@@ -26,7 +26,7 @@ A FastAPI-based service that converts PDF files to EPUB format with smart chapte
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/pdf2epub.git
+git clone https://github.com/eulixir/pdf2epub.git
 cd pdf2epub
 ```
 
@@ -110,11 +110,6 @@ The project follows a clean architecture approach with clear separation of conce
 1. Install development dependencies:
 ```bash
 pip install -r requirements.txt
-```
-
-2. Run tests:
-```bash
-make test
 ```
 
 3. Run linter:

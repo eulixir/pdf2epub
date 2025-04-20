@@ -1,9 +1,12 @@
 from app.domain.services.extract_pdf import extract_text_from_pdf
 from app.domain.services.epub import text_to_epub
 
-async def convert_pdf(file_content: bytes, format: str, title: str, author: str) -> bytes:
+
+async def convert_pdf(
+    file_content: bytes, format: str, title: str, author: str
+) -> bytes:
     text = await extract_text_from_pdf(file_content)
-    
+
     match format:
         case "epub":
             return text_to_epub(text, title, author)
@@ -15,4 +18,3 @@ async def convert_pdf(file_content: bytes, format: str, title: str, author: str)
 
 async def _convert_mobi(text: str) -> bytes:
     raise NotImplementedError("MOBI conversion not implemented yet")
-
